@@ -1,4 +1,4 @@
-# Project README
+# Resume Data Extraction
 
 ## Project Setup and Installation
 
@@ -27,10 +27,6 @@ To set up and install the project, follow these steps:
 ## Running the Application
 
 To run the application in development mode, use the following command:
-```bash
-uv run
-```
-If the `uv` command is unavailable, use the fallback:
 ```powershell
 python -m uvicorn app.main:app --reload
 ```
