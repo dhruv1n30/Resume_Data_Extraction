@@ -1,0 +1,52 @@
+[project]
+name = "cv"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi==0.115.0",
+    "httpx==0.27.2",
+    "loguru>=0.7.3",
+    "openai==1.55.3",
+    "pdf2image>=1.17.0",
+    "pdfplumber>=0.11.7",
+    "pillow>=11.3.0",
+    "pydantic[email]==2.9.2",
+    "pydantic-settings==2.5.2",
+    "pymupdf>=1.26.4",
+    "pypdf2==3.0.1",
+    "pytest==8.3.3",
+    "python-dotenv==1.0.1",
+    "python-multipart>=0.0.20",
+    "ruff>=0.13.3",
+    "uvicorn[fastapi]==0.31.0",
+]
+
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+    "I",   # import sorting
+    "W",   # pycodestyle warnings
+    "C4",  # flake8-comprehensions
+]
+ignore = ["E501", "D101", "D100"]
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+docstring-code-format = true
+line-ending = "lf"
+preview = true
+
+[tool.ruff.lint.isort]
+length-sort = true
+lines-between-types = 1
+combine-as-imports = true
